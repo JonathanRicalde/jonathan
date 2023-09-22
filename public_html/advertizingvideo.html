@@ -1,0 +1,259 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Advertizing</title>
+    <link rel="icon" href="icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/steller.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #FF8882;
+            color: black;
+            text-align: center;
+            padding: 2em 0;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            
+            padding: 1em 0;
+            margin: 0;
+        }
+        nav ul li {
+            margin: 0 1em;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+        }
+        section {
+            padding: 3em;
+        }
+        .about {
+            background-color: #e4e4e4;
+            text-align: center;
+        }
+        .about p {
+            margin-left: 10%;
+            margin-right: 10%
+            
+        }
+        .projects {
+            background-color: #f8f8f8;
+        }
+        .contact {
+            background-color: #e4e4e4;
+        }
+        .project {
+            margin-bottom: 2em;
+            padding: 1em;
+            border: 1px solid #ddd;
+            background-color: white;
+            text-align: center;
+            
+        }
+        .projects img{
+            width: 50%;
+            border-radius: 25px;
+            display: block;
+            margin: auto;  
+            
+        }
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #FF8882;
+            color: white;
+        }
+        
+        .back a {
+            position: relative;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 120px;
+            height: 50px;
+            background: #ff7a57;
+            border: 2px solid white;
+            border-radius: 8px;
+            font-size: 19px;
+            color: black;
+            text-decoration: none;
+            font-weight: 600;
+            letter-spacing: 1px;
+            z-index: 1; 
+            overflow: hidden;
+            transition: .5s;
+        }
+
+        .back{
+            display: flex;
+            justify-content: space-between;
+            width: 280px;
+            height: 50px;
+            margin-top: 10;
+            margin-left: 10;
+            
+        }  
+
+        .back a:hover{
+            color: #00abf0;
+        }
+
+        .back a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            background: #081b29;
+            z-index: -1;
+            transition: .5s;
+        }
+
+        .back a:hover::before {
+            width: 100%;
+        }
+
+        .contact-sci {
+            bottom: 40px;
+            width: 170px;
+            display: flex;
+            justify-content: space-between ;
+        }
+
+        .contact-sci a {
+            position: relative;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            background: transparent;
+            border: 2px solid #00abf0;
+            border-radius: 50%;
+            font-size: 20px;
+            color: #00abf0;
+            text-decoration: none;
+            z-index: 1;
+            overflow: hidden;
+            transform: .5s;
+            
+        }
+
+        .contact-sci a:hover {
+            color: #081b29;
+        }
+
+        .contact-sci a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: #00abf0;
+            z-index: -1;
+            transition: .5s;
+        }
+
+        .contact-sci a:hover::before {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    
+
+        
+        
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" data-spy="affix" data-offset-top="0">
+        <div class="container">
+            <div class="back">
+                <a onclick="goBack()">Back</a>
+            </div>
+            <a class="navbar-brand1" href="#"><img src="assets/imgs/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>   
+                </ul>
+            </div>
+        </div>          
+    </nav>
+    <section class="about" id="about">
+        <h1>ADVERTIZING VIDEO</h1>
+        <p>These advertizing videos are my projects from my school days at the Technological Institute of the Philippines</p>
+        </section>
+
+    <section class="projects" id="projects">
+        <div class="project">
+            <video class="video" width="auto" height="auto" controls>
+                <source src="ads1.mp4" type="video/mp4">
+              </video>
+            <h3>I CAN FLY</h3>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="project">
+            <video class="video" width="auto" height="auto" controls>
+                <source src="ads2.mp4" type="video/mp4">
+              </video>
+            <h3>PIC-NIK</h3>
+        </div>
+    </section>
+    
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-info">
+              <h2>Contact</h2>
+              <p><strong>Name:</strong> Jonathan Ricalde</p>
+              <p><strong>Email:</strong> jonathangricalde@gmail.com</p>
+              <p><strong>Phone:</strong> 09472780358</p>
+              <p><strong>Address:</strong> 51 Bungad Kaingin 2 Pansol Quezon City</p>
+              <p><strong>Social Media:</strong></p>
+              <div class="contact-sci">
+                <a href="https://www.facebook.com/Oks.din/"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.facebook.com/messages/t/100002646205940"><i class='bx bxl-messenger'></i></a>
+                <a href="https://www.linkedin.com/in/jonathan-ricalde-a403b6292/"><i class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
+          </div>
+    </section>
+    </div>
+        <button id="goToTopBtn" title="Go to Top">↑</button>
+    </div>
+    <footer>
+        <p>&copy; 2023 Jonathan G. Ricalde</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

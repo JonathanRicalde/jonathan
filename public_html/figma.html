@@ -3,9 +3,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Mobile Application</title>
+    <title>Figma Designs</title> 
     <link rel="icon" href="icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="assets/css/steller.css">
     <style>
         body {
@@ -71,8 +70,8 @@
         footer {
             text-align: center;
             padding: 1em 0;
-            background-color: #FF8882;
-            color: white;
+            background-color: White;
+            color: black;
         }
         
         .back a {
@@ -170,23 +169,6 @@
         .contact-sci a:hover::before {
             width: 100%;
         }
-
-        .slideshow-container {
-            max-width: 80%;
-            position: relative;
-            margin: auto;
-            margin-bottom: 10px; 
-        }
-        
-        .slide {
-            display: none;
-        }
-        
-        .slide img {
-            width: 100%;
-            height: 70%;
-            border-radius: 25px;
-        }
     </style>
 </head>
 <body>
@@ -201,11 +183,10 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto align-items-center">
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">Apps</a>
+                        <a class="nav-link" href="#about">Designs</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
@@ -215,42 +196,28 @@
         </div>          
     </nav>
     <section class="about" id="about">
-        <h1>MOBILE APPLICATION</h1>
-        <p>This is some of my work during my school days and also on my free online courses.</p>
-
-        <div class="slideshow-container">
-            <div class="slide">
-              <img src="pic1.jpg" alt="Slide 1">
-            </div>
-            <div class="slide">
-              <img src="pic2.jpg" alt="Slide 2">
-            </div>
-            <div class="slide">
-              <img src="pic3.jpg" alt="Slide 3">
-            </div>
-            
-            
-          </div>
+        <h1>Figma Designs</h1>
+        <p>This is some of my work on creating website designs using Figma.</p>
         
     </section>
     <section class="projects" id="projects">
-        <h2>Mobile Application</h2>
+        <h2>Designs</h2>
         <div class="project">
-            <img src="pic1.jpg">
-            <h3>MEDICHECK</h3>
-            <p>This application was my capstone project for my exit thesis. It aims to help users fight counterfeit medicine by scanning specific products. This application was generated using TensorFlow Lite</p>
+            <img src="Figma1.jpg"><br>
+            <h3>Coin NFT</h3>
+            <p>Coin NFT is one of my designs for a website where the users can trade or buy non-fungible tokens. I made it simple, like making the background dark blue and white and flexing the non-fungible token image.</p>
+            <div class="buttons4">
+                <a href="https://www.figma.com/proto/ZnyZx0bRntKQo54tPLvs7S/NFTProject?node-id=1-2" >View Design</a>
+            </div>
         </div>
         <div class="project">
-            <img src="pic2.jpg">
-            <h3>LITTLE LEMON APP</h3>
-            <p>The Little Lemon App is a Coursera project. It allows their students to practice making UI/UX design</p>
+            <img src="Figma2.jpg"><br>
+            <h3>Pik-nik</h3>
+            <p>This pik-nik design I made because I want to continue my pik-nik advertising video to become a website. I make it scrollable on Figma to make it look more alive, and I can visualize the outcome of the website that I am working on in the future. </p>
+            <div class="buttons4">
+                <a href="https://www.figma.com/proto/SJnuEx83RghHxDQQ19pTSF/Pik-Nik-Project?node-id=8-42&starting-point-node-id=8%3A42" >View Design</a>
+            </div>
         </div>
-        <div class="project">
-            <img src="pic3.jpg">
-            <h3>CaFeelings</h3>
-            <p>Cafeelings is one of my final projects in Visual Communication an e-commerce platform aiming to sell coffee, mugs, t-shirts, and more</p>
-        </div>
-        
     </section>
     <section class="contact" id="contact">
         <div class="container">
@@ -275,37 +242,19 @@
     <footer>
         <p>&copy; 2023 Jonathan G. Ricalde</p>
     </footer>
+     
 
     <script src="script.js"></script>
 
-    <script>
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.slide');
-        
-        function showSlide(n) {
-          if (n < 0) {
-            currentSlide = slides.length - 1;
-          } else if (n >= slides.length) {
-            currentSlide = 0;
-          } else {
-            currentSlide = n;
-          }
-        
-          slides.forEach(slide => slide.style.display = 'none');
-          slides[currentSlide].style.display = 'block';
-        }
-        
-        function changeSlide(n) {
-          showSlide(currentSlide + 1);
-        }
+    
 
-        setInterval(changeSlide, 2000);
-        
-        showSlide(currentSlide);
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+    <!-- bootstrap 3 affix -->
+	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
 
-        function goBack() {
-            window.history.back();
-        }
-        </script>
+    <!-- steller js -->
+    <script src="assets/js/steller.js"></script>
 </body>
 </html>

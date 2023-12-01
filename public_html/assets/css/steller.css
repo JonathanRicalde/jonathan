@@ -921,7 +921,8 @@ pre code {
     max-width: 25%;
   }
   .col-sm-4 {
-    -webkit-box-flex: 0;
+    width: 50%;
+    margin: 0 auto;
     -webkit-flex: 0 0 33.33333%;
         -ms-flex: 0 0 33.33333%;
             flex: 0 0 33.33333%;
